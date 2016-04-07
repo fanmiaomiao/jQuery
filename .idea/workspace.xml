@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25dc0520-69d3-40a3-aaa2-de870a07fb41" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-HTML/jquery-getcontentAndattribute" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-HTML/jquery-setContentAndattribute" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-HTML/jquery-elements" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jQuery.iws" />
@@ -86,11 +85,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery-setContentAndattribute" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jquery-setContentAndattribute" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jquery-HTML/jquery-setContentAndattribute">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-elements" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jquery-HTML/jquery-elements">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.95449376">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -116,6 +125,7 @@
         <option value="$PROJECT_DIR$/jquery-chapter/jquery-callbackAndChaining" />
         <option value="$PROJECT_DIR$/jquery-HTML/jquery-getcontentAndattribute" />
         <option value="$PROJECT_DIR$/jquery-HTML/jquery-setContentAndattribute" />
+        <option value="$PROJECT_DIR$/jquery-HTML/jquery-elements" />
       </list>
     </option>
   </component>
@@ -460,7 +470,7 @@
       <option name="number" value="Default" />
       <updated>1459992909218</updated>
       <workItem from="1459992910469" duration="244000" />
-      <workItem from="1459993225505" duration="477000" />
+      <workItem from="1459993225505" duration="534000" />
     </task>
     <task id="LOCAL-00001" summary="jquery selector and events&#10;">
       <created>1459993405093</created>
@@ -486,11 +496,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459993591873</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="jquery get/set content and attribute">
+      <created>1459993721739</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1459993721739</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="721000" />
+    <option name="totallyTimeSpent" value="778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
@@ -529,7 +545,8 @@
     <MESSAGE value="jquery selector and events&#10;" />
     <MESSAGE value="jquery effect&#10;" />
     <MESSAGE value="jquery callback and Chaining" />
-    <option name="LAST_COMMIT_MESSAGE" value="jquery callback and Chaining" />
+    <MESSAGE value="jquery get/set content and attribute" />
+    <option name="LAST_COMMIT_MESSAGE" value="jquery get/set content and attribute" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -602,8 +619,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jquery-HTML/jquery-setContentAndattribute">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery-HTML/jquery-elements">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.95449376">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
         </state>
       </provider>

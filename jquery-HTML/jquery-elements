@@ -1,0 +1,67 @@
+通过jQuery ，可以很容易的添加新元素/内容。
+1、jQuery append() 方法
+        jQuery append()方法在被选元素的结尾插入内容。
+        实例：
+                $('p').append("some append text!");
+
+2、jQuery prepend() 方法
+        jQuery prepend()方法在被选元素的开头插入内容。
+        实例：
+                $('p').prepend('Some prepend text!');
+
+
+通过append() 和 prepend()方法添加若干新元素。
+
+在下面的例子中，我们创建若干个新元素。这些元素可以通过 text/HTML、jQuery 或者 JavaScript/DOM 来创建。然后我们通过 append() 方法把这些新元素追加到文本中（对 prepend() 同样有效）：
+实例
+
+function appendText()
+{
+var txt1="<p>Text.</p>";               // 以 HTML 创建新元素
+var txt2=$("<p></p>").text("Text.");   // 以 jQuery 创建新元素
+var txt3=document.createElement("p");  // 以 DOM 创建新元素
+txt3.innerHTML="Text.";
+$("p").append(txt1,txt2,txt3);         // 追加新元素
+}
+
+
+3、jQuery after() 和 before() 方法
+        jQuery after() 方法在被选元素之后插入内容。
+        jQuery before() 方法在被选元素之前插入内容。
+        实例：
+                $('img').after("some text after!");
+                $('img').before("some text before!");
+通过 after() 和 before() 方法添加若干新元素
+
+after() 和 before() 方法能够通过参数接收无限数量的新元素。可以通过 text/HTML、jQuery 或者 JavaScript/DOM 来创建新元素。
+在下面的例子中，我们创建若干新元素。这些元素可以通过 text/HTML、jQuery 或者 JavaScript/DOM 来创建。然后我们通过 after() 方法把这些新元素插到文本中（对 before() 同样有效）：
+实例
+
+function afterText()
+{
+var txt1="<b>I </b>";                    // 以 HTML 创建新元素
+var txt2=$("<i></i>").text("love ");     // 通过 jQuery 创建新元素
+var txt3=document.createElement("big");  // 通过 DOM 创建新元素
+txt3.innerHTML="jQuery!";
+$("img").after(txt1,txt2,txt3);          // 在 img 之后插入新元素
+}
+
+通过jQuery ，可以很容易的删除已有的HTML元素。
+1、jQuery remove（） 方法：
+        jQuery remove（） 方法删除被选元素及其子元素。
+    实例：
+            $("#div1").remove();
+
+2、jQuery empty()方法
+        jQuery empty（）方法删除被选元素的子元素。
+        实例：
+                $('#div1').empty();
+
+3、过滤被删除的元素：
+        jQuery remove（）方法也可接收一个参数，允许您对被删元素进行过滤。
+下面的例子删除 class="italic" 的所有 <p> 元素：
+实例
+
+$("p").remove(".italic");
+
+
