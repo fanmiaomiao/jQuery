@@ -1,0 +1,12 @@
+jQuery滑动方法可使元素上下滑动。
+1、jQuery slideDown()方法：
+        jQuery slideDown()方法用于向下滑动元素。
+        语法：
+        $(selector).slideDown(speed,callback)
+2、jQuery slideUp()方法
+        jQuery slideUp()方法用于向上滑动元素。
+        语法：
+                $(selector).slideUp(speed,callback)
+
+3、jQuery slideToggle() 方法：
+         jQuery slideToggle()方法可以在slideDown()和slideUp()之间进行切换。

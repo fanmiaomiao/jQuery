@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25dc0520-69d3-40a3-aaa2-de870a07fb41" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-otherItem/jquery-noConflist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-effects/jqueryEffects-fade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-effects/jqueryEffects-slide" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jQuery.iws" />
@@ -25,26 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jquery-getcontentAndattribute" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jquery-HTML/jquery-getcontentAndattribute">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-setContentAndattribute" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jquery-HTML/jquery-setContentAndattribute">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="jquery-elements" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jquery-HTML/jquery-elements">
           <provider selected="true" editor-type-id="text-editor">
@@ -115,11 +96,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery-noConflist" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jquery-noConflist" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jquery-otherItem/jquery-noConflist">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5005688">
+            <state vertical-scroll-proportion="0.0">
               <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jqueryEffects-slide" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jquery-effects/jqueryEffects-slide">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jqueryEffects-fade" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jquery-effects/jqueryEffects-fade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.18202503">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -153,6 +154,8 @@
         <option value="$PROJECT_DIR$/jquery-ajax/AJAX-introduction" />
         <option value="$PROJECT_DIR$/jquery-ajax/AJAX-service" />
         <option value="$PROJECT_DIR$/jquery-otherItem/jquery-noConflist" />
+        <option value="$PROJECT_DIR$/jquery-effects/jqueryEffects-slide" />
+        <option value="$PROJECT_DIR$/jquery-effects/jqueryEffects-fade" />
       </list>
     </option>
   </component>
@@ -219,7 +222,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jquery-otherItem" />
+              <option name="myItemId" value="jquery-effects" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -500,7 +503,7 @@
       <option name="number" value="Default" />
       <updated>1459992909218</updated>
       <workItem from="1459992910469" duration="244000" />
-      <workItem from="1459993225505" duration="2323000" />
+      <workItem from="1459993225505" duration="2454000" />
     </task>
     <task id="LOCAL-00001" summary="jquery selector and events&#10;">
       <created>1459993405093</created>
@@ -562,11 +565,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459998128352</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="jquery noConflict">
+      <created>1459998307969</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1459998307969</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2567000" />
+    <option name="totallyTimeSpent" value="2698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
@@ -611,7 +620,8 @@
     <MESSAGE value="jquery filter&#10;" />
     <MESSAGE value="AJAX&#10;" />
     <MESSAGE value="AJAX service&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="AJAX service&#10;&#10;" />
+    <MESSAGE value="jquery noConflict" />
+    <option name="LAST_COMMIT_MESSAGE" value="jquery noConflict" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -752,8 +762,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jquery-otherItem/jquery-noConflist">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5005688">
+        <state vertical-scroll-proportion="0.0">
           <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery-effects/jqueryEffects-slide">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery-effects/jqueryEffects-fade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18202503">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding />
         </state>
       </provider>
