@@ -1,0 +1,85 @@
+一、jquery css类
+通过jQuery ，可以很容易的对css元素进行操作。
+1、jQuery 操作css
+addClass() - 向被选元素添加一个或多个类
+removeClass() - 从被选元素删除一个或多个类
+toggleClass() - 对被选元素进行添加/删除类的切换操作
+css() - 设置或返回样式属性
+下面的例子展示如何向不同的元素添加 class 属性。当然，在添加类时，您也可以选取多个元素：
+实例
+
+$("button").click(function(){
+  $("h1,h2,p").addClass("blue");
+  $("div").addClass("important");
+});
+您也可以在 addClass() 方法中规定多个类：
+实例
+
+$("button").click(function(){
+  $("#div1").addClass("important blue");
+});
+2、jQuery removeClass（）方法：
+        下面例子演示如何不同的元素中删除指定的class属性：
+实例
+
+$("button").click(function(){
+  $("h1,h2,p").removeClass("blue");
+});
+
+
+3、jQuery toggleClass（）方法：
+        下面的例子将展示如何使用jQuery toggleClass（）方法。该方法对被选元素进行添加/删除类的切换操作：
+$("button").click(function(){
+  $("h1,h2,p").toggleClass("blue");
+});
+
+
+4、jQuery css（）方法：
+   4.1、 jQuery css（）方法设置或返回被选元素的一个或多个样式属性。
+        返回css属性：
+        如需返回指定的css属性的值，请使用如下语法：
+        css("prototypename");
+        实例：
+        $("p").css("background-color"); // 返回首个匹配元素的background-color值：
+    4.2 、设置css属性：
+                css('prototypename','value');
+                实例：
+                        $('p').css('background-color','yellow');
+5、设置多个css属性：
+css({"propertyname":"value","propertyname":"value",...});
+    实例：
+              $('p').css({
+                    "background-color":"yellow",
+                    "font-size":"200%"
+                });
+
+
+
+
+二、jquery尺寸
+
+通过jQuery ，很容易处理元素和浏览器窗口的尺寸。
+1、jQuery width() 和 height() 方法：
+width() 方法 设置或返回元素的宽度(不包括内边距、边框和外边距)
+height() 方法 设置或返回元素的高度(不包括内边距、边框和外边距)
+
+实例：
+        $('button').click(function() {
+           var txt = '';
+            txt += "Width" + $('#div').width()+"</br>" ;
+            txt += "Height" + $('#div').height();
+            $("#div1").html(txt);
+        });
+
+
+2、jQuery innerWidth() 和 innerHeight() 方法
+        innerWidth() 方法返回元素的宽度（包括内边距）。
+        innerHeight() 方法返回元素的高度(包括内边距)。
+
+3、jQuery outerWidth() 和 outerHeight() 方法：
+        outerWidth() 方法 返回元素的宽度（包括内边距和边框）。
+        outerHeight() 方法 返回元素的高度（包括内边距和边框）
+ 4.实例：
+       $("button").click(function() {
+           $('#div1').width(500).height(500);
+       });
