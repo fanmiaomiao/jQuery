@@ -1,0 +1,33 @@
+1、如何在页面上同时使用jQuery 和 其他框架。
+
+jQuery noConflict() 方法
+
+noConflict() 方法会释放会 $ 标识符的控制，这样其他脚本就可以使用它了。
+实例
+
+当然，您仍然可以通过全名替代简写的方式来使用 jQuery：
+$.noConflict();
+jQuery(document).ready(function(){
+  jQuery("button").click(function(){
+    jQuery("p").text("jQuery 仍在运行！");
+  });
+});
+（2）、也可以创建自己的简写：
+                var jq = $.noConflict();
+                jq(document).ready(function(){
+                    jq("button").click(function(){
+                        jq('p').text("jQuery 仍在运行！");
+                    });
+                });
+
+(3)、实例
+
+如果你的 jQuery 代码块使用 $ 简写，并且您不愿意改变这个快捷方式，那么您可以把 $ 符号作为变量传递给 ready 方法。这样就可以在函数内使用 $ 符号了 - 而在函数外，依旧不得不使用 "jQuery"：
+$.noConflict();
+jQuery(document).ready(function($){
+  $("button").click(function(){
+    $("p").text("jQuery 仍在运行！");
+  });
+});
+
+
