@@ -1,0 +1,200 @@
+一、隐藏和显示
+
+1.1、语法：
+
+$('selector').hide(speed,callback);
+$('selector').show(speed,callback);
+1
+2
+可选的speed参数规定隐藏/显示的速度，可以取以下值：”slow”、”fast”或毫秒。
+可选的callback参数是隐藏或显示完成后所执行的函数名称。
+实例：
+
+ $('button').click(function(){
+                $('p').hide(1000);
+            })
+1
+2
+3
+1.2，jQuery toggle()
+通过jQuery，您可以使用toggle()方法来切换hide()和show()方法。
+显示被隐藏的元素，并隐藏已显示的元素。
+实例：
+
+ $('button').click(function(){
+                        $('p').toggle(1000);
+                    })
+1
+2
+3
+语法：
+
+$(selector).toggle(speed,callback);
+1
+可选的speed参数规定隐藏/显示的速度，可以取以下值：”slow”、”fast“或毫秒。
+可选的callback参数是toggle()方法完成后所执行的函数名称。
+
+二、淡入和浅出
+
+2.1 jQuery Fading方法
+通过jQuery，您可以实现元素的淡入与淡出效果。
+(1)、fadeIn（）方法
+jQuery fade()用于淡入已隐藏的元素。
+语法：
+
+$(selector).fadeIn(speed,callback)；
+1
+可选的speed参数是fading完成后所执行的函数名称。
+实例：
+
+$("button").click(function(){
+              $("#div1").fadeIn();
+              $("#div2").fadeIn("slow");
+              $("#div3").fadeIn(3000);
+          });
+1
+2
+3
+4
+5
+2.2 jQuery fadeOut()方法：
+jQuery fadeOut()方法用于淡出可见元素。
+语法：
+
+$(selector).fadeOut(speed,callback);
+1
+可选的speed参数规定效果的时长，它可以取以下值：”slow”，”fast“或毫秒。
+
+2.3 jQuery fade Toggle()方法：
+jQuery fadeToggle（）方法可以在fadeIn()与fadeOut()方法之间进行切换。
+如果元素已淡出，则fadeToggle()会向元素添加淡入效果。
+如果元素已淡入，则fadeToggle()会向元素添加淡出效果。
+
+$(selector).fadeToggle(speed,callback)
+1
+2.4 jQuery fadeTo()方法
+jQuery fadeTo()方法允许渐变为给定的不透明度(值介于0——1之间)
+语法：
+
+  $(selector).fadeTo(speed,opacity,callback);
+1
+必须的speed参数规定效果的时长，可以取值：”slow”，”fast”或毫秒。
+fadeTo()方法必需的opacity参数将淡入淡出效果设置为给定的不透明度，值介于0——1之间。
+可选的callback参数是该函数完成后所执行的函数的名称。
+
+三、滑动
+
+jQuery滑动方法可使元素上下滑动：
+3.1 jQuery slideDown()方法：
+jQuery slideDown()方法用于向下滑动元素。
+语法：
+
+ $(selector).slideDown(speed,callback)
+3.2 jQuery slideUp()方法：
+jQuery slideUp()方法用于向上滑动元素。
+语法：
+
+  $(selector).slideUp(speed,callback)
+3.3 jQuery slide Toggle()方法
+jQuery slideToggle()方法可以在slideDown()和slideUp()之间进行切换。
+
+四、动画
+
+4.1 jQuery animate()方法用于创建自定义动画
+语法：
+$(selector).animate({params},speed,callback)
+必需的params参数定义形成动画的css属性。
+speed参数规定效果的时长。它可以取以下值：”slow”、”fast”或毫秒。
+可选的callback参数是动画完成后所执行的函数的名称。
+eg：下面的例子演示animate()方法的简单应用；他把div元素移到左边，直到属性等于250像素为止。
+实例：
+
+$('button').click(function(){
+                $('div').animate({left:'250px'});
+            })
+默认所有HTML元素都有一个静态位置，无法移动。
+如需进行位置上的操作，需首先把css position属性设置为relative 、fixed或absolute。
+4.2 animate() 操作多个属性
+
+  $('button').click(function(){
+                    $('div').animate({
+                            left: '250px',
+                            opacity: '0.5',
+                            height: '150px',
+                            width: '150px'
+                           })
+            })
+1
+2
+3
+4
+5
+6
+7
+8
+4.3 使用相对值
+也可以定义相对值(该值相对于元素的当前值)。需要在上面加上 += 或 -=；
+
+实例
+
+
+$("button").click(function(){
+  $("div").animate({
+    left:'250px',
+    height:'+=150px',
+    width:'+=150px'
+  });
+});
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+4.4 使用预定义的值
+可以把属性的动画值设置为”show”、“hide”或“toggle”。
+
+实例 1
+
+$("button").click(function(){
+  $("div").animate({
+    height:'toggle'
+  });
+});
+1
+2
+3
+4
+5
+6
+7
+实例2：
+下面的例子把元素移动到右边，然后增加文本的字号：
+
+ $('button').click(function(){
+    var div = $('div');
+    div.animate({left:'100%'},"slow");
+    div.animate({fontSize:"3em"},"slow");
+})
+
+五、jQuery 停止动画
+
+jQuery stop()方法用于在动画或效果完成前对它们进行停止
+
+1.1 jQuery stop()方法：
+jQuery stop() 方法用于停止动画效果，在它们完成之前。
+stop() 方法适用于所有jQuery 效果的函数，包括滑动、淡入淡出和自定义动画。
+语法：
+$(selector).stop(stopAll,goToEnd);
+可选的stopAll 参数规定是否应该清除动画队列。默认是false。即仅停止活动的动画，允许任何排入队列的动画向后执行。
+可选的goToEnd参数规定是否立即完成当前动画。默认是false。
+因此默认地，stop()会清除在被选元素上指定的当前动画。
+
+实例：
+            $('#stop').click(function(){
+                    $("#panel").stop();
+            })
