@@ -1,0 +1,29 @@
+一、通过jQuery可以选取（查询、query）HTML元素，并对它执行”操作“（actions）。
+
+1.jQuery语法实例：
+$(this).hide();
+2.演示jQuery hide（）函数，隐藏当前的HTML元素。
+$(‘#test’).hide()
+3.隐藏id为test的元素。
+$(‘p’).hide()
+4.隐藏所有p元素
+$(‘.test’).hide()
+5.隐藏class=”test“的元素
+二、jQuery语法
+jQuery语法是为了HTML元素的选取编制的，可以对元素执行某些操作。
+*美元符号定义jQuery
+*选择符(selector)”查找“和”查询“HTML元素。
+*jQuery的action（）执行对元素的操作。
+三、实例
+
+1、$(this).hide()  隐藏当前元素
+2、$('p').hide()  隐藏所有段落
+3、$('.test').hide() 隐藏所有class为test的元素
+4、$('#test').hide() 隐藏所有id为test的元素
+四、文档就绪函数
+所有的jQuery函数位于一个document ready函数中：
+
+$(document).ready(function（）{
+    ---jQuery functions go here  ---
+});
+这是为了防止在文档完全加载（就绪）之前运行jQuery代码。

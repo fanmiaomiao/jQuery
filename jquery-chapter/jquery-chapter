@@ -1,0 +1,53 @@
+jquery 不是W3C标准。
+一、jQuery认识
+jQuery是继prototype之后又一个优秀的JavaScript库。极大地简化了JavaScript编程。它是轻量级的js库，它兼容css3，还兼容各种浏览器。它包含了很多供改变和操作的HTML的强大的函数。
+
+1、改变HTML内容：
+
+$(selector).html(content) ：html()函数改变所匹配的HTML元素的内容(innerHTML)。
+实例：$('p').html('helloWorld');
+
+2、添加HTML内容：
+（1）语法：
+
+$(selector).append(content)
+1
+:append()函数向所匹配的HTML元素内部追加内容。
+实例：$('p').append('W3CSchool');
+（2）语法：
+
+$(selector).prepend(content)
+1
+：prepend()函数向所匹配的HTML元素内部预置(Prepend)内容。
+实例：$('p').prepend('W3CSchool');
+（3）语法：
+
+    $(selector).after(content) ：after（）函数在所有匹配元素之后插入HTML内容。
+1
+（4）语法：
+
+ $(selector).before(content);
+1
+before()函数在所有匹配元素之前插入HTML内容。
+    实例：$('p').before('W3CSchool');
+更多语法：
+$(selector).html(content)： 改变被选元素的(内部)HTML
+$(selector).append(content)：向被选元素(内部的)HTML内部追加内容
+$(selector).prepend(content) ： 向被选元素的(内部)HTML“预置”(prepend)内容
+
+另外：
+如果不想在自己计算机上存放jQuery库，那么可以从Google或者Microsoft加载CDN jQuery核心文件。
+
+*Google 的 CDN：
+
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+</head>
+1
+2
+3
+*Microsoft的CDN：
+
+<head>
+    <script type="text/javascript" src="ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+</head>
