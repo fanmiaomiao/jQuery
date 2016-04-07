@@ -1,0 +1,75 @@
+一、jquery实现单选框并选中value=”2”的项：
+html代码：
+
+<input type="radio" name="radio"
+value="1" />1
+<input type="radio" name="radio" value="2" />2
+<input type="radio" name="radio" value="3" />3
+
+js代码实现：
+
+jQuery("input[type='radio'][name='radio'][value='2']").attr('checked','checked');
+
+二、jQuery实现复选框
+
+<input type='checkbox' name='checkbox' id='checkAll' />全选/取消全选
+<input type='checkbox' name='checkbox' id='check_id1' value='1' />1
+<input type='checkbox' name='checkbox' id='check_id2' value='2' />2
+<input type='checkbox' name='checkbox' id='check_id3' value='3' />3
+<input type='checkbox' name='checkbox' id='check_id4' value='4' />4
+
+js代码实现：
+
+var val = jQuery("#checkbox_id1").val();  // 获取指定id的复选框的值
+var isSelected = jQuery("#checkbox_id2").attr("checked",true); // 选中id为checkbox_id2的复选框
+jQuery("input[name='checkbox'][type='checkbox']").get(2).checked = true; // 设置index=2即第三项为选中状态。
+jQuery("input[type='checkbox']:checked").each(function(){
+    alert(jQuery(this).val());
+});
+// 实现多选/取消多选
+jQuery(function(){
+    jQuery("checkAll").click(function(){
+        if(jQuery(this).attr('checked')==true){
+            jQuery("input[name='checkbox'][type='checkbox']").each(function(){
+                jQuery(this).attr('checked',true);
+            });
+        } else {
+            jQuery("input[type='checkbox'][name='checkbox']").each(function(){
+                jQuery(this).attr("checked",false);
+            });
+        }
+    });
+});
+
+三、select下拉框
+
+<select name='select' id='select_id'>
+    <option value='1' >1</option>
+    <option value='2' >2</option>
+    <option value='3' >3</option>
+    <option value='4' >4</option>
+</select>
+
+js代码：
+
+jQuery("#select_id").change(function(){
+    // 为select添加事件
+});
+var checkValue = jQuery('#select_id').val(); // 获取选中项的value
+var checkText = jQuery('#select_id').text();
+var checkIndex = jQuery('select_id').attr('selectedIndex');  // 获取选中项的索引值
+// 或者 jQuery('select_id').get(0).selectedIndex;
+var maxIndex = jQuery('select_id:last').attr('selectedIndex'); // 获取select最大索引值
+// 或者： jQuery('#select_id').get(0).index;
+
+// jQuery设置select选中项
+jQuery('#select_id').get(0).selectIndex = 1; // 设置select索引值为1的项选中
+jQuery('#select_id').val(4); // 选中value值为4的项选中
+
+//jQuery添加/删除option项
+jQuery('#select_id').append('<option value = '5'>5</option>'); // 在最后(最后一个位置追加)新增一个option
+jQuery('#select_id').prepend('<option value = '0'>0</option>'); //在最前面(第一个位置插入)新增一项option
+jQuery('#select_id').get(0).remove(); // 删除索引值为1的项，即第一项
+jQuery('#select_id:last').remove(); // 删除最后一项
+jQuery('#select_id[value='3']').remove(); // 删除value值为3的项
+jQuery('#select_id').empty();  // 清空id为select_id的select

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25dc0520-69d3-40a3-aaa2-de870a07fb41" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-effects/jqueryEffects-fade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-effects/jqueryEffects-slide" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-effects/jquery-radioAndcheckbox" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jQuery.iws" />
@@ -26,16 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jquery-elements" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jquery-HTML/jquery-elements">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="jquery-cssclassAndsize" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jquery-HTML/jquery-cssclassAndsize">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,11 +105,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jqueryEffects-fade" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jqueryEffects-fade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jquery-effects/jqueryEffects-fade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18202503">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-radioAndcheckbox" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jquery-effects/jquery-radioAndcheckbox">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3629124">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,6 +155,7 @@
         <option value="$PROJECT_DIR$/jquery-otherItem/jquery-noConflist" />
         <option value="$PROJECT_DIR$/jquery-effects/jqueryEffects-slide" />
         <option value="$PROJECT_DIR$/jquery-effects/jqueryEffects-fade" />
+        <option value="$PROJECT_DIR$/jquery-effects/jquery-radioAndcheckbox" />
       </list>
     </option>
   </component>
@@ -503,7 +503,7 @@
       <option name="number" value="Default" />
       <updated>1459992909218</updated>
       <workItem from="1459992910469" duration="244000" />
-      <workItem from="1459993225505" duration="2454000" />
+      <workItem from="1459993225505" duration="2552000" />
     </task>
     <task id="LOCAL-00001" summary="jquery selector and events&#10;">
       <created>1459993405093</created>
@@ -571,11 +571,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459998307969</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="jquery effects&#10;&#10;">
+      <created>1459998435868</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1459998435868</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2698000" />
+    <option name="totallyTimeSpent" value="2796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
@@ -621,7 +627,8 @@
     <MESSAGE value="AJAX&#10;" />
     <MESSAGE value="AJAX service&#10;&#10;" />
     <MESSAGE value="jquery noConflict" />
-    <option name="LAST_COMMIT_MESSAGE" value="jquery noConflict" />
+    <MESSAGE value="jquery effects&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="jquery effects&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -778,8 +785,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jquery-effects/jqueryEffects-fade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18202503">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery-effects/jquery-radioAndcheckbox">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3629124">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
