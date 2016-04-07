@@ -1,0 +1,51 @@
+一、callback函数
+
+1.1 jQuery 动画问题：
+许多jQuery 函数涉及动画。这些函数也许会将speed或duration作为可选参数。
+例子：
+
+ $('p').hide('slow');
+1
+speed 或 duration 参数可以设置许多不同的值，比如：“slow”、“fast”、“normal”或毫秒。
+实例：
+
+ $('button').click(function(){
+                $('p').hide(1000);
+            });
+1
+2
+3
+由于JavaScript 语句是逐一执行的，动画之后的语句可能会产生错误或页面冲突没因为动画还没有完成。
+为了避免这个情况，可以以参数的形式添加Callback函数。
+1.2 jQuery callback函数
+当动画100%完成后，即调用Callback函数。
+语法：
+$(selector).hide(speed,callback);
+Callback参数是一个在hide操作完成后被执行的函数。
+实例：
+
+  $('p').hhide(1000,function(){
+                                    alert('The params is now hidden !');
+                           });
+1
+2
+3
+二、 Chaining
+通过jQuery，我们可以把动作/方法链接起来：
+Chaining允许我们在一条语句中，允许多个jQuery方法(在相同元素上)
+2.1 jQuery() 方法链接
+直到现在，我们都是一次写一条jQuery语句(一条接着一条)。
+不过，有一种名为链接(chaining)的技术，允许我们在相同元素上运行多个jQuery命令，一条接着另一条。
+提示： 这样的话，浏览器就不必多次查找相同的元素。
+如需链接一个元素，您只需简单的把该动作追加到之前动作上。
+实例：
+
+$('#p1').css('color',"red").slideUp(20000).slideDown(2000);
+1
+如需要，我们也可以添加多个方法调用。
+提示：当进行链接时，代码执行会变得很差，不过，jQuery在语法上不是很严格您可以按照希望的格式来写，包括折行和缩进。
+例子：
+
+ $('#p1').css("color","red")
+         .slideUp(2000)
+         .slideDown(2000);
