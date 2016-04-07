@@ -1,0 +1,118 @@
+一、祖先
+
+祖先是父、祖父或曾祖父等等。
+通过jQuery，您能够向上遍历DOM树，以查找元素的祖先。
+
+1、向上遍历DOM树：
+这些jQuery 方法都很有用，它们用于向上遍历DOM树：
+。parent()
+。parents()
+。parentsUntil()
+
+2、jQuery parent() 方法
+    parent() 方法返回被选元素的直接父元素。
+    该方法只会向上一级对DOM树进行遍历
+实例
+
+$(document).ready(function(){
+  $("span").parent();
+});
+
+3、jQuery parents() 方法：
+    parents() 方法返回被选元素的所有祖先元素，它一路向上直到文档的根元素(<html>)。
+
+4、jQuery parentsUnitl() 方法：
+      parentsUtil()方法返回介于两个给定元素直接所有元素的祖先元素。
+      下面的例子返回介于<span>与<div>元素之间的所有祖先元素。
+实例
+
+$(document).ready(function(){
+  $("span").parentsUntil("div");
+});
+
+
+二、后代
+
+后代是 子、孙、曾孙等等。
+通过jQuery ，您能够向下遍历DOM树，以查找元素的后代。
+
+1、向下遍历DOM树。
+  用于向下遍历DOM树的jQuery 方法：
+    。children()
+    。find()
+
+2、jQuery children() 方法：
+     children() 方法返回被选元素的所有直接子元素。
+     该方法只会向下一级对DOM树进行遍历。
+实例
+
+$(document).ready(function(){
+  $("span").parentsUntil("div");
+});
+
+3、jQuery find() 方法：
+        find() 方法返回被选元素的后代元素，一路向下直到最后一个后代。
+下面的例子返回属于 <div> 后代的所有 <span> 元素：
+实例
+
+$(document).ready(function(){
+  $("div").find("span");
+});
+
+4、
+下面的例子返回 <div> 的所有后代：
+实例
+
+$(document).ready(function(){
+  $("div").find("*");
+});
+
+
+三、同胞
+
+同胞即拥有相同的父元素。
+通过jQuery ，能够在DOM树种遍历元素的同胞元素。
+
+1、jQuery siblings()方法：
+    siblings() 方法返回被选元素的所有同胞元素。
+
+下面的例子返回 <h2> 的所有同胞元素：
+实例
+
+    $(document).ready(function(){
+        $("h2").siblings();
+    })；
+
+实例2、
+        返回<h2>所有同胞元素的<p>元素：
+        $(docuemnt).ready(function(){
+            $("h2").siblings("p");
+        });
+
+2、jQuery next() 方法
+        next()方法返回被选元素的下一个同胞元素。
+        该方法只返回一个元素。
+下面的例子返回 <h2> 的下一个同胞元素：
+实例
+
+$(document).ready(function(){
+  $("h2").next();
+});
+
+3、jQuery nextUntil() 方法
+        nextUntil() 方法返回介于两个给定参数之间的所有跟随的同胞元素。
+        实例：
+        返回介于<h2>与<h6>元素之间的所有同胞元素。
+        $(document).ready(function() {
+                    $("h2").nextUntil("h6");
+        })；
+4、jQuery prev(), prevAll() & prevUntil() 方法
+prev(), prevAll() 以及 prevUntil() 方法的工作方式与上面的方法类似，只不过方向相反而已：它们返回的是前面的同胞元素（在 DOM 树中沿着同胞元素向后遍历，而不是向前）。
+
+
+
+
+
+
+
+
